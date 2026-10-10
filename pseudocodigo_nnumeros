@@ -1,0 +1,31 @@
+'''
+ALGORITMO: SUMAR_N_NUMEROS
+ENTRADAS: n
+SALIDA: suma
+
+    suma = 0
+    
+    MIENTRAS n > 0:
+        suma = suma + n
+        n = n - 1
+
+    DEVOLVER suma
+
+LLAMADAS:
+    SUMAR_N_NUMEROS(10) -> 55
+    SUMAR_N_NUMEROS(5)  -> 15
+'''
+
+# Pedimos el número al usuario
+n = int(input("Introduce un número N: "))
+
+# Creamos la variable donde iremos acumulando la suma
+suma = 0
+
+# Bucle MIENTRAS (while)
+while n > 0:
+    suma = suma + n
+    n = n - 1  # Restamos 1 a 'n' en cada vuelta
+
+# Mostramos el resultado
+print(f"La suma total es: {suma}")
