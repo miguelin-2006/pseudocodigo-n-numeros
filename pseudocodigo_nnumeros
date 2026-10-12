@@ -16,16 +16,20 @@ LLAMADAS:
     SUMAR_N_NUMEROS(5)  -> 15
 '''
 
-# Pedimos el número al usuario
-n = int(input("Introduce un número N: "))
+# 1. Definimos la función según las indicaciones del profesor
+def function(n):
+    suma = 0
+    
+    while n > 0:
+        suma = suma + n
+        n = n - 1  # Restamos 1 en cada vuelta
+        
+    return suma
 
-# Creamos la variable donde iremos acumulando la suma
-suma = 0
 
-# Bucle MIENTRAS (while)
-while n > 0:
-    suma = suma + n
-    n = n - 1  # Restamos 1 a 'n' en cada vuelta
+# 2. Invocamos la función con datos de prueba
+print("Resultado para n = 10:")
+print(function(10))
 
-# Mostramos el resultado
-print(f"La suma total es: {suma}")
+print("Resultado para n = 5:")
+print(function(5))
